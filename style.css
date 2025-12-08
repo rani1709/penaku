@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --blue-light: #a8d8ff;
+    --blue-soft: #e6f4ff;
+    --blue-dark: #006bb3;
+    --card-bg: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: var(--blue-soft);
+    color: #333;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: var(--blue-light);
+    align-items: center;
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    animation: fadeDown 0.7s ease;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--blue-dark);
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--blue-dark);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    align-items: center;
+    animation: fadeUp 1s ease;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h2 {
+    font-size: 40px;
+    color: var(--blue-dark);
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-top: -10px;
+}
+
+.btn-glow {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 12px;
+    background: var(--blue-dark);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.4);
+    transition: 0.3s;
+}
+
+.btn-glow:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(0, 123, 255, 0.7);
+}
+
+.hero-img img {
+    width: 380px;
+    border-radius: 20px;
+    animation: float 4s ease-in-out infinite;
+}
+
+/* ARTICLE SECTION */
+.section-title {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--blue-dark);
+    font-size: 28px;
+}
+
+.article-list {
+    max-width: 850px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 350px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.article-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.article-list::-webkit-scrollbar-thumb {
+    background: var(--blue-dark);
+    border-radius: 10px;
+}
+
+.article-card {
+    display: flex;
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition: 0.3s;
+    animation: fadeUp 0.7s ease;
+}
+
+.article-card:hover {
+    transform: translateY(-4px);
+}
+
+.article-card img {
+    width: 120px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.article-card .text {
+    padding-left: 15px;
+}
+
+/* FOOTER */
+.footer {
+    background: var(--blue-light);
+    padding: 15px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .hero-text {
+        max-width: 100%;
+    }
+    .hero-img img {
+        width: 250px;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 500px) {
+    .header {
+        padding: 10px 20px;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .article-card img {
+        width: 90px;
+        height: 60px;
+    }
+}
+.article-body {
+    background: var(--blue-soft);
+    font-family: "Poppins";
+    padding: 20px;
+}
+
+.article-container {
+    max-width: 750px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    animation: fadeUp 0.6s ease;
+}
+
+.article-date {
+    color: gray;
+    font-size: 14px;
+}
+
+.article-cover {
+    width: 100%;
+    max-height: 330px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 25px;
+    text-decoration: none;
+    color: var(--blue-dark);
+    font-weight: 600;
+}

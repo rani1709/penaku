@@ -1,20 +1,20 @@
 // DATA ARTIKEL (KAMU BISA TAMBAH SESUKA HATI)
 const articles = [
     {
-        title: "Cara Menjadi Lebih Produktif",
-        description: "Tips praktis untuk meningkatkan fokus & konsistensi.",
-        thumbnail: "assets/thumb1.jpg",
+        title: "Hidup untuk Belajar",
+        description: "Esensi hidup adalah menjadi pembelajar sepanjang hayat.",
+        thumbnail: "life.jpg",
         link: "artikel1.html"
     },
     {
-        title: "Belajar Teknologi Tanpa Stres",
-        description: "Cara belajar coding secara santai dan menyenangkan.",
+        title: "Continuation Writing Project",
+        description: "Wait.",
         thumbnail: "assets/thumb2.jpg",
         link: "artikel2.html"
     },
     {
-        title: "Mindset Positif untuk Remaja",
-        description: "Bangun kebiasaan sehat dan pikiran yang kuat.",
+        title: "Continuation Writing Project",
+        description: "Wait.",
         thumbnail: "assets/thumb3.jpg",
         link: "artikel3.html"
     }

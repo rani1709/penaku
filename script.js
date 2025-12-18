@@ -3,7 +3,7 @@ const articles = [
     {
         title: "Hidup untuk Belajar",
         description: "Esensi hidup adalah menjadi pembelajar sepanjang hayat.",
-        thumbnail: "life.jpg",
+        thumbnail: "life.png",
         link: "artikel1.html"
     },
     {
